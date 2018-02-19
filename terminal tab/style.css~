@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #ddd;
+    line-height: 1.5em;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 10px;
+    height: 80%;
+    width: 60%;
+}
+
+p {
+    width: 100%;
+    height: auto;
+}
+
+#input {
+    width: 100%;
+    border: none;
+}
+
+span {
+    color: #036d00;
+}

@@ -1,0 +1,44 @@
+/** {
+    font-family: 'Righteous', cursive;
+}*/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #aeaeae;
+    margin: 0;
+    background: #353d45;
+}
+
+h1 {
+    font-size: 2em;
+    
+}
+
+#sokinput {
+    position: absolute;
+    font-size: 30px;
+    color: #cecece;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 5px;
+    padding: 1px;
+    width: 400px;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: calc(50% - 206px);
+}
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    filter: contrast(0%) blur(10px);
+}

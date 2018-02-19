@@ -1,0 +1,51 @@
+//---KLOCKA---\\
+setInterval(clock, 1000);
+clock();
+function clock() {
+	var time = new Date();
+	var timma = ("0" + time.getHours()).slice(-2);		//ser till att det alltid är 2 siffrigt. T ex 01:09:02 istället för 1:9:2
+	var minut = ("0" + time.getMinutes()).slice(-2);
+	document.getElementById("klocka").innerHTML = timma + ":" + minut;
+};
+
+
+//---DATUM---\\
+setInterval(datum, 1000);
+datum();
+function datum() {
+	var time = new Date();
+	var ar = time.getFullYear();
+	var manad = ("0" + (time.getMonth() + 1)).slice(-2);		//time.getMonth() ger ett värde mellan 0-11. Därför krävs +1 för att få rätt värde. En nolla framför och slice(-2) ser till att det är 2 siffrigt. T ex 01/05/2016 istället för 1/5/2016
+	var dag = ("0" + time.getDate()).slice(-2);
+	document.getElementById("datum").innerHTML = dag + "/" + manad + "/" + ar;
+}
+
+
+//---SÖKBAR---\\
+document.getElementById("sokinput").value = "";		//ser till att sökfältet är tomt även om man uppdaterar sidan
+
+function sok(){
+    var sokinput = document.getElementById("sokinput").value;
+    var punkt = sokinput.includes(".");
+    var space = sokinput.includes(" ");
+    
+    if(punkt && !space){
+	window.location = "http://" + sokinput;
+    } else if (sokinput.length > 0) {
+	window.location = "https://duckduckgo.com/?q=" + sokinput;
+    }
+}
+
+window.addEventListener("keydown", function (event) {		//---KOLLA UPP!!! KOMMENTARER KRÄVS!---\\
+	if (event.defaultPrevented) {							//när enter trycks ner körs sok()
+    	return; 
+  }
+
+	if (event.key === "Enter") {
+		sok();
+	} else {
+		return;
+	}
+
+	event.preventDefault();
+}, true);

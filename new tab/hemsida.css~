@@ -1,0 +1,86 @@
+* {
+    font-family: 'Righteous', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('morning.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #555;
+}
+
+/*---HEADER---*/
+header {
+    width: 100%;
+    text-align: center;
+    color: #aeaeae;
+}
+
+#tid {
+    text-align: inherit;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+    
+h1 {
+    font-size: 11em;
+    text-align: inherit;
+}
+
+h3 {
+    margin-top: -20px;
+    font-size: 4em;
+    text-align: inherit;
+}
+
+#sokinput {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: #cecece;
+    background-color: #66666633;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0 35px;
+    min-size: 20em;
+}
+
+
+/*---BOOKMARKS---*/
+#ul {
+    position: absolute;
+    right: 100px;
+    list-style: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0 35px;
+    
+}
+
+li {
+    margin: 40px 0;
+}
+
+li:last-child, li:first-child {
+		   margin: 20px 0;
+	       }
+
+a {   
+    text-decoration: none;
+    color: #aeaeae;
+    font-size: 45px;
+}

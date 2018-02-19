@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomePage</title>
+	<link type="text/css" href="hemsida.css" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" />
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+<body id="body">
+	<header>
+		<h1 id="klocka" class="tid"></h1>
+		<h3 id="datum" class="tid"></h3>
+		<input style="text" id="sokinput" placeholder="Search the Web!" autofocus></input>
+	</header>
+	
+	
+
+	<script src="script.js"></script>
+</body>
+</html>

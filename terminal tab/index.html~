@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XTerm</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p id="output"><span>sqy@startpage: ~ $</span> uname && date<br>Waterfox 50.0.2<br><br><span>sqy@startpage: ~ $</span> ls bookmarks<br>Twitter Spotify Sweclockers Youtube Hjarntorget<br><span>sqy@startpage: ~ $</span> "</p>
+    <input style="text" id="input"></input>
+    <script src="script.js"></script>
+  </body>
+</html>
